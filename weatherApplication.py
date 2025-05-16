@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def weather():
     location = "London"  #Select by on your choice
-    API_KEY = "bc6f0e6520a08b4c95b0ae1753f65000"
+    API_KEY = ""
     url = "http://api.weatherstack.com/current"
 
     response = requests.get(url, params={"access_key": API_KEY, "query": location})
